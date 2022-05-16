@@ -14,12 +14,12 @@
            .text {
              text-align: center;
              color: chocolate;
-             padding: 120px;
+             padding: 100px;
              background-color: cornflowerblue;
              border: solid;
              border-radius: 50px;
              border-color: chocolate;
-            
+
 
            } 
            
@@ -35,9 +35,21 @@
 
           }  
           
+          .carousel {
+             margin-bottom:50px;
+            
+          }
           
           .navbar {
             color: blue;
+          }
+          
+          .h3 {
+            /* pink if --my-var and --my-background are not defined */
+            background-color: var(--my-var, var(--my-background, chocolate));
+            padding: 25px;
+            margin-top: 25px;
+            margin-bottom: 50px;
           }
             
             
@@ -50,36 +62,23 @@
          
          
          <!--NAVBAR-->
-        <div class=navbar>  
-          <nav class= "navbar navbar-dark bg-dark navbar-dark fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                <span class="navbar-brand mb-0 h1">Civil Engineering</span>
-                <a class="nav-link" href="#">What is Civil Engineering</a>
-                <a class="nav-link" href="h2">Tech Invenvtions In Civil Engineering</a>
-
-                <!--Civil Engineering-->
-              </a>
-           
-              <!--<a class="nav-link" href="#">What is Civil Engineering</a>-->
-              
-              <!--<li class="nav-item">-->
-              <!--  <a class="nav-link" href="#"></a>-->
-              <!--</li>-->
-            
-              <!--<a class="nav-link" href="h2">Tech Invenvtions In Civil Engineering</a>-->
-            
-            </div>
-          </nav>
-        </div>  
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="https://cdn.pixabay.com/photo/2016/08/27/11/16/contractor-1623889_1280.jpg" alt="" width="50" height="50" class="d-inline-block align-text-top">
+              Civil Engineering
+            </a>
+            <a class="nav-link" href="#">Tech Inventions in Civil Engineering</a>
+            <a class="nav-link" href="#">Tech Inventions For the Future</a>
+          </div>
+        </nav>
         
 
      
   <div class=container>   
        <!--CAROUSEL-->
        
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" class="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -123,9 +122,13 @@
             
          <!--Part B-->
             
-          <h2 class="h2">
+          <h3 class="h3">
               Tech Inventions in Civil Engineering
-          </h2>
+          </h3>
+          
+          <h3 class="h3">
+              Tech Inventions in For the Future
+          </h3>          
         
         <div class="container-fluid">
 
